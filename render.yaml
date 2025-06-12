@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: hashtag-trends-api
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn google_trends_scraper:app
